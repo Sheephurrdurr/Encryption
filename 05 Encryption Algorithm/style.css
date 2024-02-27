@@ -1,0 +1,85 @@
+body{
+    margin:0;
+}
+
+.kode-mono-font {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+    background-color: #3F463E;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px; 
+    padding: 20px;
+    min-height:100vh;
+}
+
+#title {
+    color:#56C550;
+}
+.titleRow {
+    display:flex;
+    justify-content: center;
+}
+
+.textareaRow {
+    display: flex;
+    justify-content: center;
+    gap:75px;
+}
+
+.descriptionTxt {
+    color:#399b32;
+    width:300px;
+}
+
+.txtAreaContainerStyle {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+
+.txtAreaContainerStyle > div {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.txtAreaContainerStyle .btnStyle {
+    margin-top: 10px; 
+    align-self: flex-end;    
+}
+
+.txtAreaStyle{
+    background-color:#263325 ;
+    margin:25px 0px 5px 0px;
+    color:#56C550;
+    height:150px;
+    width:350px;
+    font-size:16px;
+    resize:none;
+    border:none;
+}
+
+.btnStyle {
+    font-weight:500;
+    font-style:normal;
+    background-color: #56C550;
+    margin-bottom: 10px;
+    width:90px;
+    height:40px;
+    font-size:17px;
+    text-align: center;
+    cursor:pointer;
+    border-radius:2px;
+    border:solid #547053 2px;
+    transition: background-color 0.3s ease;
+    align-self:flex-end;
+}
+.btnStyle:hover {
+    background-color:#166810;
+}

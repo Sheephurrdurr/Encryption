@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/aes.min.js" integrity="sha512-UOtWWEXoMk1WLeC873Gmrkb2/dZMwvN1ViM9C1mNvNmQSeXpEr8sRzXLmUSha1X4x5V892uFmEjiZzUsYiHYiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encryption/Decryption</title>
+</head>
+<body class="kode-mono-font">
+    <section class="container">
+
+        <div class="titleRow">
+            <h1 id="title">Encryption/Decryption</h1>
+        </div>
+            
+        <div class="textareaRow">
+            <div class="txtAreaContainerStyle">
+                <p class="descriptionTxt">Encrypt message with AES (Advanced Encryption Standard).</p>
+                <div>
+                    <textarea placeholder="Type message for encryption..." spellcheck="false" class="kode-mono-font txtAreaStyle" id="plainText"></textarea>
+                    <button class="kode-mono-font btnStyle" id="encryptBtn">ENCRYPT</button>
+                </div>
+            </div>
+
+            <div class="txtAreaContainerStyle">
+                <p class="descriptionTxt">Encrypted message will be displayed here.</p>
+                <div>
+                    <textarea disabled spellcheck="false" placeholder="Encrypted message here..." class="kode-mono-font txtAreaStyle" id="cipherText"></textarea>
+                    <button class="kode-mono-font btnStyle" id="decryptBtn">DECRYPT</button>
+                </div>
+                
+            </div>
+
+            <div class="txtAreaContainerStyle">
+                <p class="descriptionTxt">Decrypted message will be displayed here.</p>
+                <textarea spellcheck="false" placeholder="Decrypted message here..." class="kode-mono-font txtAreaStyle" id="decryptedText"></textarea>
+                <button class="kode-mono-font btnStyle" id="resetBtn">RESET</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
